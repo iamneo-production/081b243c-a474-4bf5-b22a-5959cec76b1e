@@ -1,0 +1,11 @@
+.main-container {
+    max-width: 360px;
+    margin: auto;
+  }
+  
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
