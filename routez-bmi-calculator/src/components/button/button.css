@@ -1,11 +1,7 @@
 .outlined{
-    color: #2AFF7F;
-    border-color: #2AFF7F;
     width: 300px;
 }
 
 .contained{
-    color:white;
-    background-color: #2AFF7F;
     width: 300px;
 }
