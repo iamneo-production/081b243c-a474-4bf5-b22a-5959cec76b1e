@@ -1,6 +1,6 @@
 import React from 'react'
 import 'landing.css'
-import {button} from '../../components/button/button'
+import {Custom_button} from '../../components/button/button'
 
 export const Landing = () => {
   return (
@@ -13,7 +13,7 @@ export const Landing = () => {
         <h1 className='heading'>CALCULATOR</h1>
       </div>
       <div>
-        <button variant='outlined' name='LOGIN' size='large' />
+        <Custom_button variant='outlined' name='LOGIN' size='large' />
       </div>
     </div>
   )

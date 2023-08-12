@@ -3,14 +3,14 @@ import React from 'react'
 import 'button.css'
 
 
-export const button = (props:any) => {
+export const Custom_button = (props:any) => {
   return (
     <Button size={props.size} variant={props.variant} className={props.variant}>{props.name}</Button>
   )
 }
 
 // Setting default value for props
-button.defaultProps = {
+Custom_button.defaultProps = {
   size: 'medium',
   variant: "contained",
   name: 'Button'
