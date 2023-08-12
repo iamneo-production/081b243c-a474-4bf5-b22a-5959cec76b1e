@@ -1,0 +1,28 @@
+.outer-container {
+    width: 310px;
+    background-color: #000033;
+}
+
+.header {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.field-container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.field {
+    margin-bottom: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2AFF7F;
+}
