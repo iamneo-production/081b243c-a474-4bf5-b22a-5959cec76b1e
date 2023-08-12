@@ -15,9 +15,9 @@ const ColorButton = styled(Button)<ButtonProps>(({ theme }) => ({
 }));
 
 export const Custom_button = (props: any) => {
-  let color = '#2AFF7F';
-  let backgroundColor = '#2AFF7F';
-  let borderColor = '#2AFF7F';
+  let color;
+  let backgroundColor;
+  let borderColor;
   if (props.variant == 'contained') {
     color = 'white';
     backgroundColor = '#2AFF7F';
