@@ -7,7 +7,11 @@ import routes from './routes';
 
 function App() {
   return (
-    <RouterProvider router={routes}/>
+    <div className="container">
+      <div className='inner-container'>
+        <RouterProvider router={routes} />
+      </div>
+    </div>
   );
 }
 
