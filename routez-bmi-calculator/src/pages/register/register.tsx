@@ -17,7 +17,7 @@ export const Register = () => {
           <Custom_field label='Re-type password'/>
         </div>
       </div>
-      <Custom_button variant='contained' name='LOGIN' size='large' />
+      <Custom_button variant='contained' name='REGISTER' size='large' />
     </div>
   )
 }
