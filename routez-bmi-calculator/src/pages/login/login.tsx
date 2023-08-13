@@ -34,7 +34,7 @@ export const Login = () => {
       alert("Enter valid details")
       return;
     }
-    const apiUrl = 'http://localhost:8081/api/login';
+    const apiUrl = 'https://8081-cecdbbbebcbbcebefefededfecafbdcdebecae.premiumproject.examly.io/api/login';
     fetch(apiUrl, {method: 'POST', headers: { 'Content-Type': 'application/json', }, body: JSON.stringify({email:email, password:password}),} )
       .then(response => {
 
@@ -60,12 +60,12 @@ export const Login = () => {
           {emailError && <div className='error' style={{ color: 'red' }}>{emailError}</div>}
         </div>
         <div className='field' >
-          <CustomField label='Password'/>
+          <CustomField label='Password' type='password' onChange={(e: any) => setPassword(e.target.value)}/>
           <a href='/forget_password'>Forgot password?</a>
         </div>
       </div>
       <div>
-      <CustomButton variant='contained' name='LOGIN' size='large'/>
+      <CustomButton variant='contained' name='LOGIN' size='large' onClick={()=>{handleSubmit()}}/>
       </div>
       <Link to='/'>GO BACK</Link>
     </div>
