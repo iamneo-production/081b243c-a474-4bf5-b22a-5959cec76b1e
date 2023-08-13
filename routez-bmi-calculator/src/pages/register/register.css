@@ -1,6 +1,7 @@
-.outer-container {
-    width: 310px;
-    background-color: #000033;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header {

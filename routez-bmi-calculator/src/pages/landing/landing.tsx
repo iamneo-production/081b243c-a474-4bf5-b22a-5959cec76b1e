@@ -5,7 +5,7 @@ import img from '../../resources/BMI_landing_img.png'
 
 export const Landing = () => {
   return (
-    <div className='outer-container'>
+    <div className='wrapper'>
       <div>
         <img className='img' alt='BMI_landing_img.png' src={img}></img>
       </div>

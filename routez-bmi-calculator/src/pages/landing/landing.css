@@ -1,9 +1,7 @@
-.outer-container {
-    width: 310px;
+.wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #000033;
 }
 
 .heading{

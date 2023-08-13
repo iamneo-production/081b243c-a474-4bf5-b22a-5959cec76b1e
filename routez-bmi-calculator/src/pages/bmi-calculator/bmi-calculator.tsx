@@ -1,7 +1,10 @@
+import { Container } from "@mui/system";
 import React from "react";
 
 export const BMICalculator = () => {
     return (
-        <>BMI Calculator</>
+        <div className="wrapper">
+            Cal
+        </div>
     );
 }

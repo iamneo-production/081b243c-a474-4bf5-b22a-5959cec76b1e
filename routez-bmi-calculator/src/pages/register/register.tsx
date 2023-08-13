@@ -4,7 +4,7 @@ import { CustomField } from '../../components/text_field/custom_field'
 
 export const Register = () => {
   return (
-    <div className='outer-container'>
+    <div className='wrapper'>
       <p className='header'>Register</p>
       <div className='field-container'>
         <div className='field' >
