@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+.header {
+  color: #FFFF;
+  margin-top: 2rem;
+}
+
+.card {
+  min-width: 275px;
+  text-align: center;
+  background-color: #292D36;
+}
+
+.bmi-number {
+  text-align: center;
+  color: #FFFF;
+}
+
+.bmi-text-red {
+  font-size: 14px;
+  color: red;
+}
+
+.bmi-text-green {
+  font-size: 14px;
+  color: rgb(0, 255, 42);
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.full-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  

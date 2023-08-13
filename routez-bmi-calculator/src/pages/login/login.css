@@ -1,6 +1,7 @@
-.outer-container {
-    width: 310px;
-    background-color: #000033;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .header {
@@ -25,4 +26,8 @@ a {
 
 a:hover {
     color: #2AFF7F;
+}
+
+.forget-pass{
+    padding-left: 5px;
 }

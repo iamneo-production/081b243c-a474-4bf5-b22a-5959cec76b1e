@@ -1,0 +1,22 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.wrapper > .header {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 4rem;
+}
+
+.wrapper > .calculate-button{
+    display: flex;
+    align-self: center;
+    margin-top: auto;
+}
