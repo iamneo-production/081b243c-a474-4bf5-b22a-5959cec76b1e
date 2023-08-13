@@ -19,6 +19,18 @@ server.use((req, res, next) => {
   next();
 });
 
+// login
+server.post("/api/login", async (req, res) => {
+  const {email, password} = req.body;
+  const user = db.get("users").value().find(el => el.email === email);
+  res.jsonp({});
+});
+
+// register
+server.post("/api/register", async (req, res) => {
+  res.jsonp({});
+});
+
 // Calculate BMI
 server.post("/api/calculate", async (req, res) => {
   const { weight, height } = req.body;
