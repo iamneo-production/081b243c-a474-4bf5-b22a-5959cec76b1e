@@ -1,0 +1,20 @@
+{
+    "categories": [
+        {"id": 1, "name": "Severe Thinness", "min": 0, "max": 16},
+        {"id": 2, "name": "Moderate Thinness", "min": 16, "max": 17},
+        {"id": 3, "name": "Mild Thinness", "min": 17, "max": 18.5},
+        {"id": 4, "name": "Normal", "min": 18.5, "max": 25},
+        {"id": 5, "name": "Overweight", "min": 25, "max": 30},
+        {"id": 6, "name": "Obese Class I", "min": 30, "max": 35},
+        {"id": 7, "name": "Obese Class II", "min": 35, "max": 40},
+        {"id": 8, "name": "Obese Class III", "min": 40}
+    ],
+    "users": [
+        {"id": "1", "name": "john_doe", "email": "johndoe@gmail.com", "password": "1234", "bmi": {
+            "weight": 0, 
+            "height": 0, 
+            "value": 0,
+            "category": ""
+        }}
+    ]
+}

@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Container } from '@mui/material';
 import { RouterProvider } from 'react-router-dom';
 
 import './App.css';
-import routes from './routes';
+import routes from './routes/routes';
 
 function App() {
   return (
-    <RouterProvider router={routes}/>
+    <main>
+      <Container maxWidth="xs" className='container'>
+        <RouterProvider router={routes} />
+      </Container>
+    </main>
   );
 }
 
