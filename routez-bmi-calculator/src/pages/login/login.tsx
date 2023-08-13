@@ -18,7 +18,7 @@ export const Login = () => {
         </div>
       </div>
       <div>
-      <CustomButton variant='contained' name='LOGIN' size='large' />
+      <CustomButton variant='contained' name='LOGIN' size='large'/>
       </div>
       <Link to='/'>GO BACK</Link>
     </div>
