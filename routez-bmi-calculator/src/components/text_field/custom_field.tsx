@@ -7,6 +7,8 @@ export const CustomField = (props:any) => {
     <TextField fullWidth 
     label={props.label} 
     color='success' 
+    onChange={props.onChange}
+    type={props.type}
     sx={{ background: '#292D36', color: 'white' }} 
     InputLabelProps={{
         style: { color: 'white' }, 
