@@ -2,7 +2,7 @@ import React from 'react'
 import './custom_field.css'
 import { TextField } from '@mui/material'
 
-export const Custom_field = (props:any) => {
+export const CustomField = (props:any) => {
   return (
     <TextField fullWidth 
     label={props.label} 

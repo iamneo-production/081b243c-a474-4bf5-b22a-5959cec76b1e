@@ -3,11 +3,11 @@ import Button from '@mui/material/Button';
 import React from 'react'
 import './button.css'
 
-export const Custom_button = (props: any) => {
+export const CustomButton = (props: any) => {
   let color;
   let backgroundColor;
   let borderColor;
-  if (props.variant == 'contained') {
+  if (props.variant === 'contained') {
     color = 'white';
     backgroundColor = '#2AFF7F';
     borderColor = '#2AFF7F';
@@ -34,7 +34,7 @@ export const Custom_button = (props: any) => {
 }
 
 // Setting default value for props
-Custom_button.defaultProps = {
+CustomButton.defaultProps = {
   size: 'medium',
   variant: "contained",
   name: 'Button'
