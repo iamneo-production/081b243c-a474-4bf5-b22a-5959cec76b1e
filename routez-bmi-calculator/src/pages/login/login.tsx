@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { CustomButton } from '../../components/button/button'
 import { CustomField } from '../../components/text_field/custom_field'
 import './login.css'
@@ -34,8 +34,8 @@ export const Login = () => {
       alert("Enter valid details")
       return;
     }
-    const apiUrl = '';
-    fetch(apiUrl)
+    const apiUrl = 'http://localhost:8081/api/login';
+    fetch(apiUrl, {method: 'POST', headers: { 'Content-Type': 'application/json', }, body: JSON.stringify({email:email, password:password}),} )
       .then(response => {
 
         if (!response.ok) {
