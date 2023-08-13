@@ -1,7 +1,7 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
+const middlewares = jsonServer.defaults(noCors=false);
 
 const db = router.db;
 
@@ -45,7 +45,7 @@ server.post("/api/calculate", async (req, res) => {
 
   res.jsonp({
     bmiValue: bmiValue,
-    categories: bmiCategory,
+    bmiCategory: bmiCategory,
   });
 });
 
