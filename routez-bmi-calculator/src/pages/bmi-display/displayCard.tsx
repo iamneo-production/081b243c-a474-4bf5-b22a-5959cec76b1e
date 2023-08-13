@@ -51,7 +51,7 @@ const DisplayBMI = () => {
       <div className="button-container  full-width">
         <CustomButton
           name="< Go Back"
-          size="small"
+          size="medium"
           onClick={() => { navigate("/") }}
         />
       </div>
