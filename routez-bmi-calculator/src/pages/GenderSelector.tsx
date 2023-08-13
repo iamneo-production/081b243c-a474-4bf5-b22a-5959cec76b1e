@@ -19,7 +19,6 @@ const GenderSelector = () => {
     return (
         <Container maxWidth="xs">
             <h1>Select your gender</h1>
-            <form className="GenderSelectorForm">
                 <ToggleButtonGroup
                     orientation="horizontal"
                     exclusive
@@ -38,7 +37,6 @@ const GenderSelector = () => {
                         </Stack>
                     </ToggleButton>
                 </ToggleButtonGroup>
-            </form>
         </Container >
     )
 }
