@@ -1,7 +1,5 @@
-
-import Button from '@mui/material/Button';
-import { width } from '@mui/system';
 import React from 'react'
+import Button from '@mui/material/Button';
 import './button.css'
 
 export const CustomButton = (props: any) => {
