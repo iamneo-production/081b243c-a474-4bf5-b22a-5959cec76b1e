@@ -1,5 +1,9 @@
 import React from 'react'
 import './gender.css'
+import img from '../../resources/male.png'
+import img1 from '../../resources/female.png'
+
+
 
 export const Gender = () => {
   return (
@@ -7,17 +11,25 @@ export const Gender = () => {
       <div>
         <h2 className='heading'>Select your gender</h2>
         <div className='card-male'>
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/337/584/small/default-avatar-photo-placeholder-profile-icon-vector.jpg" alt="image"/>
+        <div>
+        <img className='img' alt='male' src={img}></img>
+        </div>
         <br></br>
-        <button>Male</button>
+        <div>
+        <center><a href="./calculator" className="btn">Male</a></center>
+        </div>
         </div>
 
         <div className='card-female'>
-        <img src="https://cdn.vectorstock.com/i/preview-1x/14/18/default-female-avatar-profile-picture-icon-grey-vector-34511418.jpg" alt="image"/>
+        <div>
+        <img className='img' alt='female' src={img1}></img>
+        </div>       
         <br></br>
-        <a href="#" className="btn btn-primary">Female</a>
+        <div>
+        <center><a href="./calculator" className="btn btn-primary">Female</a></center>
         </div>
-    </div>
+        </div>
+      </div>
     </div>
   )
 }

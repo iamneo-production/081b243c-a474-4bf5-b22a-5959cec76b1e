@@ -1,4 +1,29 @@
-.img-container {
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.img {
+    margin-top: 20px;
     width: 300px;
     height: auto;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.btn-container {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

@@ -1,22 +1,23 @@
 import React from 'react'
 import { CustomButton } from '../../components/button/button'
 import { CustomField } from '../../components/text_field/custom_field'
-import './login.css'
 
-export const Login = () => {
+export const Register = () => {
   return (
     <div className='wrapper'>
-      <p className='header'>Login</p>
+      <p className='header'>Register</p>
       <div className='field-container'>
         <div className='field' >
           <CustomField label='E-mail'/>
         </div>
         <div className='field' >
           <CustomField label='Password'/>
-          <a href='/forget_password'>Forgot password?</a>
+        </div>
+        <div className='field' >
+          <CustomField label='Re-type password'/>
         </div>
       </div>
-      <CustomButton variant='contained' name='LOGIN' size='large' />
+      <CustomButton variant='contained' name='REGISTER' size='large' />
     </div>
   )
 }

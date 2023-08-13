@@ -13,10 +13,7 @@ const routes = createBrowserRouter([
     path: "/login",
     Component: Login,
   },
-  {
-    path: "/gender",
-    Component: Gender,
-  },
+
 ]);
 
 export default routes;

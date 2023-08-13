@@ -1,19 +1,21 @@
 import React from 'react'
 import './landing.css'
-import {Custom_button} from '../../components/button/button'
+import { CustomButton } from '../../components/button/button'
+import img from '../../resources/BMI_landing_img.png'
 
 export const Landing = () => {
   return (
-    <div>
-      <div className='img-container'>
-        <img src='BMI_landing_img.png' alt='BMI_landing_img'/>
+    <div className='wrapper'>
+      <div>
+        <img className='img' alt='BMI_landing_img.png' src={img}></img>
       </div>
       <div>
-        <h2 className='heading'>BMI</h2>
-        <h1 className='heading'>CALCULATOR</h1>
+      <p className='heading'>BMI</p>
+      <p className='heading'>CALCULATOR</p>
       </div>
-      <div>
-        <Custom_button variant='outlined' name='LOGIN' size='large' />
+      <div btn-container>
+        <CustomButton variant='outlined' name='LOGIN' size='large' />
+        <CustomButton variant='contained' name='REGISTER' size='large' />
       </div>
     </div>
   )
