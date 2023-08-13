@@ -1,7 +1,7 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults(noCors=false);
+const middlewares = jsonServer.defaults(noCors = false);
 
 const db = router.db;
 
@@ -21,14 +21,20 @@ server.use((req, res, next) => {
 
 // login
 server.post("/api/login", async (req, res) => {
-  const {email, password} = req.body;
+  const { email, password } = req.body;
   const user = db.get("users").value().find(el => el.email === email);
-  res.jsonp({});
+  if (user && user.password === password) {
+    res.jsonp({ msg: "success", username: user.email });
+    sessionStorage.setItem()
+  } else {
+    res.jsonp({ msg: "Login Failed" });
+  }
 });
 
 // register
 server.post("/api/register", async (req, res) => {
-  res.jsonp({});
+  const { email, password } = req.body;
+  res.jsonp({ msg: "Not still implemented" });
 });
 
 // Calculate BMI
@@ -64,7 +70,7 @@ server.post("/api/calculate", async (req, res) => {
 // Get User BMI
 server.get("/api/bmi/:id", async (req, res) => {
   const { id } = req.params;
-  const user = db.get("users").value().find(el=>el.id === id);
+  const user = db.get("users").value().find(el => el.id === id);
   res.jsonp(user.bmi);
 });
 

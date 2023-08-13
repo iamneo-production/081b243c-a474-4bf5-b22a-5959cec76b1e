@@ -64,7 +64,10 @@ export const Login = () => {
           <a href='/forget_password'>Forgot password?</a>
         </div>
       </div>
-      <CustomButton variant='contained' name='LOGIN' size='large' />
+      <div>
+      <CustomButton variant='contained' name='LOGIN' size='large'/>
+      </div>
+      <Link to='/'>GO BACK</Link>
     </div>
   )
 }
