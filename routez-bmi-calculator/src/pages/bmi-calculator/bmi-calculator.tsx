@@ -1,10 +1,13 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CustomButton } from "../../components/button/button";
 import { ValueSelector } from "../../components/value-selector/value-selector";
 
 import "./bmi-calculator.css";
 
 export const BMICalculator = () => {
+
+  const navigate = useNavigate()
   const [height, setHeight] = useState<number>(50);
   const [weight, setWeight] = useState<number>(20);
 
@@ -26,8 +29,9 @@ export const BMICalculator = () => {
       }
     )
       .then((resp) => resp.json())
-      .then((resp) => console.log(resp))
+      .then((resp) =>navigate('/bmi', {state: resp}))
       .catch((err) => console.error(err));
+      console.log()
   };
 
   return (

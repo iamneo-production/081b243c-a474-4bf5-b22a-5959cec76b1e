@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Navigate, useNavigate } from 'react-router-dom';
 import { CustomButton } from '../../components/button/button'
 import { CustomField } from '../../components/text_field/custom_field'
@@ -59,12 +60,11 @@ export const Login = () => {
           {emailError && <div className='error' style={{ color: 'red' }}>{emailError}</div>}
         </div>
         <div className='field' >
-          <CustomField label='Password' type="password" onChange={(e: any) => setPassword(e.target.value)} />
-          {passwordError && <div className='error' style={{ color: 'red' }}>{passwordError}</div>}
+          <CustomField label='Password'/>
           <a href='/forget_password'>Forgot password?</a>
         </div>
       </div>
-      <CustomButton variant='contained' name='LOGIN' size='large' onClick={() => { handleSubmit() }} />
+      <CustomButton variant='contained' name='LOGIN' size='large' />
     </div>
   )
 }

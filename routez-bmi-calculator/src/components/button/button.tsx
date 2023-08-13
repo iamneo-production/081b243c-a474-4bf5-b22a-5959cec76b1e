@@ -32,7 +32,7 @@ export const CustomButton = (props: any) => {
       fontWeight: '600', 
       margin: '5px', 
       marginBottom: '10px',
-      width: '90%'
+      width: 350
     }} 
     size={props.size} 
     variant={props.variant} 

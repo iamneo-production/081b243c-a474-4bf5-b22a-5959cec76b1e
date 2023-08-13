@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: fit-content;
 }
 
 .heading{
@@ -12,8 +14,8 @@
 }
 
 .img {
-    margin-top: 20px;
-    width: 300px;
+    margin-top: 8%;
+    width: 350px;
     height: auto;
 }
 
@@ -22,8 +24,6 @@
 }
 
 .btn-container {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width:100%;
+    border: 1px solid green;
 }

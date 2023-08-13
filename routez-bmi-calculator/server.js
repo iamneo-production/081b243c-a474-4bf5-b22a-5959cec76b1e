@@ -1,7 +1,7 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
-const middlewares = jsonServer.defaults();
+const middlewares = jsonServer.defaults(noCors=false);
 
 const db = router.db;
 
@@ -17,6 +17,18 @@ server.use((req, res, next) => {
       break;
   }
   next();
+});
+
+// login
+server.post("/api/login", async (req, res) => {
+  const {email, password} = req.body;
+  const user = db.get("users").value().find(el => el.email === email);
+  res.jsonp({});
+});
+
+// register
+server.post("/api/register", async (req, res) => {
+  res.jsonp({});
 });
 
 // Calculate BMI
@@ -45,7 +57,7 @@ server.post("/api/calculate", async (req, res) => {
 
   res.jsonp({
     bmiValue: bmiValue,
-    categories: bmiCategory,
+    bmiCategory: bmiCategory,
   });
 });
 
